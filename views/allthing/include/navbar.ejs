@@ -1,0 +1,185 @@
+<!-- <nav class="navbar navbar-expand-lg bg-body-tertiary py-3">
+  <div class="container-fluid">
+      <div class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-duotone fa-solid fa-user-secret"></i>
+          </a>
+          <div class="dropdown-menu p-3">
+              <form class="m-2" action="/admin/login" method="get">
+                  <label for="user">User Name</label>
+                  <input class="form-control mb-2" id="user" type="text" name="user" required>
+                  <label for="pass">Password</label>
+                  <input class="form-control mb-2" id="pass" type="password" name="pass" required>
+                  <button type="submit" class="btn btn-primary">Enter</button>
+              </form>
+          </div>
+      </div>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/allthing">
+                      <i class="fa-solid fa-house-chimney" style="color: red;"></i>
+                  </a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="/allthing/new">
+                      <i class="fa-solid fa-earth-oceania" style="color: red;"> A D D</i>
+                  </a>
+              </li>
+          </ul>
+          
+          <div class="d-flex">
+              <form class="form-inline my-2" role="search" method="get" action="/allthing/listing/findplace">
+                  <input class="form-control me-2" list="State" type="search" name="serchs_tate" placeholder="Search" aria-label="Search">
+                  <datalist id="State">
+                      <option value="Andhra Pradesh"></option>
+                      <option value="Arunachal Pradesh"></option>
+                      <option value="Assam"></option>
+                      Add more options as needed -->
+                  <!-- </datalist>
+                  <button class="btn btn-outline-danger" type="submit">Search</button>
+              </form>
+          </div>
+      </div>
+  </div>
+</nav> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa-duotone fa-solid fa-user-secret"></i>
+        </a>
+        <div class="dropdown-menu p-3">
+            <form class="m-2" action="/admin/login" method="get">
+                <label for="user">User Name</label>
+                <input class="form-control mb-2" id="user" type="text" name="user" required>
+                <label for="pass">Password</label>
+                <input class="form-control mb-2" id="pass" type="password" name="pass" required>
+                <button type="submit" class="btn btn-primary">Enter</button>
+            </form>
+        </div>
+    </div>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item active">
+            <a class="nav-link active" aria-current="page" href="/allthing">
+                <i class="fa-solid fa-house-chimney" style="color: red;"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link" href="/allthing/new">
+                <i class="fa-solid fa-earth-oceania" style="color: red;"> A D D</i>
+            </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+       <% if(!currentuser) {%>
+        <li class="nav-item ms-auto">
+            <a class="nav-link " href="/user/signin">sign in </a>
+          </li>
+          <li class="nav-item ms-auto">
+              <a class="nav-link " href="/user/signup">sighup</a>
+            </li>
+
+        <% }else{ %>
+            <li class="nav-item ms-auto">
+                <a class="nav-link " href="/user/profile"><b>hi! </b><%=currentuser.name %></a>
+              </li>
+            <li class="nav-item ms-auto">
+                <a class="nav-link " href="/user/signout">sighnout</a>
+              </li>
+            <% } %>
+      </ul>
+
+
+
+      
+      <form class="d-flex" method="get" action="/allthing/listing/">
+        <input class="form-control me-2" name="state" list="State" type="search" placeholder="State" aria-label="Search">
+        <datalist id="State" >
+            <option value="Andhra Pradesh" />
+            <option value="Arunachal Pradesh" />
+            <option value="Assam" />
+            <option value="Bihar" />
+            <option value="Chhattisgarh" />
+            <option value="Goa" />
+            <option value="Gujarat" />
+            <option value="Haryana" />
+            <option value="Himachal Pradesh" />
+            <option value="Jharkhand" />
+            <option value="Karnataka" />
+            <option value="Kerala" />
+            <option value="Madhya Pradesh" />
+            <option value="Maharashtra" />
+            <option value="Manipur" />
+            <option value="Meghalaya" />
+            <option value="Mizoram" />
+            <option value="Nagaland" />
+           ] <option value="Odisha" />
+            <option value="Punjab" />
+            <option value="Rajasthan" />
+            <option value="Sikkim" />
+            <option value="Tamil Nadu" />
+            <option value="Telangana" />
+            <option value="Tripura" />
+            <option value="Uttar Pradesh" />
+            <option value="Uttarakhand" />
+            <option value="West Bengal" />
+            <option value="Andaman and Nicobar Islands" />
+            <option value="Chandigarh" />
+            <option value="Dadra and Nagar Haveli and Daman and Diu" />
+            <option value="Lakshadweep" />
+            <option value="Delhi" />
+            <option value="Puducherry" />
+            <option value=" Jammu and Kashmir" />
+            <option value="Ladakh" />
+
+          
+
+          </datalist>
+        <button class="btn btn-outline-success" type="submit">select</button>
+      </form>
+    </div>
+</nav>
+
+
+
+
+
+
+
+

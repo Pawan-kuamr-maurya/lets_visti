@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourist Categories with Checkboxes and Icons</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+      
+        .checkbox-container  {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+        input[type="checkbox"] {
+            display: none; /* Hide the regular checkbox */
+        }
+        label {
+            cursor: pointer;
+            font-size: 20px;
+            transition: transform 0.2s; /* Smooth transition */
+        }
+        input[type="checkbox"]:checked + label {
+            transform: scale(1.1); /* Scale up icon on selection */
+            color: red;
+        }
+        .icon {
+            margin-right: 10px;
+            font-size: 14px; /* Base icon size */
+            transition: transform 0.2s;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Tourist Categories</h1>
+
+<div class="checkbox-container menu-item ">
+    <input type="checkbox" id="temple">
+    <label for="temple"><i class="fas fa-architecture icon"></i> Temple</label>
+</div>
+
+<div class="checkbox-container menu-item">
+    <input type="checkbox" id="beach">
+    <label for="beach"><i class="fas fa-umbrella-beach icon"></i> Beach</label>
+</div>
+
+<div class="checkbox-container menu-item">
+    <input type="checkbox" id="hill_station">
+    <label for="hill_station"><i class="fas fa-mountain icon"></i> Hill Station</label>
+</div>
+
+<div class="checkbox-container menu-item">
+    <input type="checkbox" id="water_park">
+    <label for="water_park"><i class="fas fa-water icon"></i> Water Park</label>
+</div>
+
+<div class="checkbox-container menu-item">
+    <input type="checkbox" id="fort">
+    <label for="fort"><i class="fas fa-fort icon"></i> Fort</label>
+</div>
+
+<div class="checkbox-container menu-item">
+    <input type="checkbox" id="national_park">
+    <label for="national_park"><i class="fas fa-tree icon"></i> National Park</label>
+</div>
+
+<div class="checkbox-container menu-item">
+    <input type="checkbox" id="historical_site">
+    <label for="historical_site"><i class="fas fa-book-open icon"></i> Historical Site</label>
+</div>
+
+<div class="checkbox-container menu-item">
+    <input type="checkbox" id="museum">
+    <label for="museum"><i class="fas fa-book icon"></i> Museum</label>
+</div>
+
+<div class="checkbox-container menu-item">
+    <input type="checkbox" id="spa_wellness_center">
+    <label for="spa_wellness_center"><i class="fas fa-spa icon"></i> Spa and Wellness Center</label>
+</div>
+
+<div class="checkbox-container menu-item">
+    <input type="checkbox" id="mountain_range">
+    <label for="mountain_range"><i class="fas fa-mountain icon"></i> Mountain Range</label>
+</div>
+
+<div class="checkbox-container menu-item">
+    <input type="checkbox" id="vineyard">
+    <label for="vineyard"><i class="fas fa-wine-glass-alt icon"></i> Vineyard</label>
+</div>
+
+<div class="checkbox-container menu-item">
+    <input type="checkbox" id="street_market">
+    <label for="street_market"><i class="fas fa-shopping-cart icon"></i> Street Market</label>
+</div>
+
+<div class="checkbox-container menu-item">
+    <input type="checkbox" id="art_gallery">
+    <label for="art_gallery"><i class="fas fa-paint-brush icon"></i> Art Gallery</label>
+</div>
+
+<div class="checkbox-container menu-item">
+    <input type="checkbox" id="theme_park">
+    <label for="theme_park"><i class="fas fa-funfair icon"></i> Theme Park</label>
+</div>
+
+<div class="checkbox-container menu-item">
+    <input type="checkbox" id="nature_reserve">
+    <label for="nature_reserve"><i class="fas fa-leaf icon"></i> Nature Reserve</label>
+</div>
+
+<div class="checkbox-container menu-item">
+    <input type="checkbox" id="skyscraper_observation_deck">
+    <label for="skyscraper_observation_deck"><i class="fas fa-building icon"></i> Skyscraper Observation Deck</label>
+</div>
+
+<div class="checkbox-container menu-item">
+    <input type="checkbox" id="monument">
+    <label for="monument"><i class="fas fa-monument icon"></i> Monument</label>
+</div>
+
+<div class="checkbox-container menu-item">
+    <input type="checkbox" id="hot_springs">
+    <label for="hot_springs"><i class="fas fa-hot-tub icon"></i> Hot Springs</label>
+</div>
+
+<div class="checkbox-container menu-item">
+    <input type="checkbox" id="zoological_park">
+    <label for="zoological_park"><i class="fas fa-paw icon"></i> Zoological Park</label>
+</div>
+
+<div class="checkbox-container menu-item">
+    <input type="checkbox" id="wildlife_sanctuary">
+    <label for="wildlife_sanctuary"><i class="fas fa-paw icon"></i> Wildlife Sanctuary</label>
+</div>
+
+<div class="checkbox-container menu-item">
+    <input type="checkbox" id="adventure_park">
+    <label for="adventure_park"><i class="fas fa-mountain icon"></i> Adventure Park</label>
+</div>
+
+<div class="checkbox-container menu-item">
+    <input type="checkbox" id="cultural_village">
+    <label for="cultural_village"><i class="fas fa-landmark icon"></i> Cultural Village</label>
+</div>
+
+<div class="checkbox-container menu-item">
+    <input type="checkbox" id="scenic_viewpoint">
+    <label for="scenic_viewpoint"><i class="fas fa-eye icon"></i> Scenic Viewpoint</label>
+</div>
+
+<div class="checkbox-container menu-item">
+    <input type="checkbox" id="amusement_park">
+    <label for="amusement_park"><i class="fas fa-roller-coaster icon"></i> Amusement Park</label>
+</div>
+
+<div class="checkbox-container menu-item">
+    <input type="checkbox" id="botanical_garden">
+    <label for="botanical_garden"><i class="fas fa-seedling icon"></i> Botanical Garden</label>
+</div>
+
+<div class="checkbox-container menu-item">
+    <input type="checkbox" id="lakeside_resort">
+    <label for="lakeside_resort"><i class="fas fa-water icon"></i> Lakeside Resort</label>
+</div>
+
+<div class="checkbox-container menu-item">
+    <input type="checkbox" id="cave">
+    <label for="cave"><i class="fas fa-cave icon"></i> Cave</label>
+</div>
+
+<div class="checkbox-container menu-item">
+    <input type="checkbox" id="stadium">
+    <label for="stadium"><i class="fas fa-stadium icon"></i> Stadium</label>
+</div>
+
+<div class="checkbox-container menu-item">
+    <input type="checkbox" id="aquarium">
+    <label for="aquarium"><i class="fas fa-fish icon"></i> Aquarium</label>
+</div>
+
+
+
+
+<svg   viewBox="0 0 101.48 122.88"   height="35px" width="auto">
+<style type="text/css">.st0{fill-rule:evenodd;clip-rule:evenodd;}</style>
+<g>
+    <path class="st0" d="M31.74,16.1h1.15v-1.4h1.61v-1.69h1.15V0.87c0-0.48,0.39-0.87,0.87-0.87c0.48,0,0.87,0.39,0.87,0.87V2.2 c9.3,5.02,10.14-6.91,19.55,1.69c-3.39-0.09-5.94,1.5-8.91,3.21c-2.9,1.67-5.72,3.24-9.15,3.27c-0.6,0.01-1.11-0.03-1.5-0.07v2.7 h1.11v1.69h1.61v1.4h1.15v3.83h1.47c8.47,13.02,13.17,23.15,14.96,38.51c0.03,0.25,0.06,0.5,0.08,0.75 c2.09-6.12,5.39-11.6,9.53-17.96h1.75v-3.06h0.92v-1.12h1.29v-1.35h0.75v-9.71c0-0.48,0.39-0.87,0.87-0.87s0.87,0.39,0.87,0.87 v1.16c7.27,3.77,8-5.57,15.47,1.26c-2.71-0.07-4.75,1.2-7.12,2.57c-2.32,1.34-4.58,2.59-7.32,2.62c-0.39,0-0.74-0.01-1.02-0.04 v2.14h0.72v1.35h1.29v1.12h0.92v3.06h1.17c6.77,10.42,10.54,18.51,11.96,30.81c0.33,2.88,0.51,5.85,0.48,8.93l4.09,2.29h1.29v0.84 h1.41v0.84h0.96L98,85.76h-4.76l-1.72,1.75c-0.19,1.03-0.16,1.78,0,2.35h1.02v0.7c-1.94,1.02-2.54,2.87-2.54,4.91l0.51,0.34 c-0.27,0.74-0.64,1.34-1.14,1.74v3.13h1.02v1.6h-1.05c0,7.13,0,3.45,0,9.93h2.72v2.37h3v2.58h3.07v1.88h3.35v3.84 c-34.06,0-67.5-0.25-101.48-0.25v-4.81h4.19v-2.36h3.84v-3.23h3.75v-2.97h3.4c0-8.1,0-4.12,0-13.04h-1.31v-2.01h1.27v-3.91 c-0.63-0.49-1.09-1.24-1.43-2.17l0.64-0.42c0-2.55-0.75-4.86-3.18-6.14v-0.87h1.28c0.2-0.71,0.23-1.65,0-2.94l-2.14-2.18H4.36 l-0.08-1.02h1.2v-1.05h1.77v-1.05h1.62l5.11-2.87c-0.04-3.86,0.19-7.57,0.61-11.17c1.78-15.37,6.49-25.49,14.96-38.51h2.19V16.1 L31.74,16.1z M37.35,79.63l3.67,6.74l2.47-7.19c0.19-0.03,0.38-0.05,0.57-0.08c8.02,9.55,4.75,19.03,4.75,31.95H23.65 c0-11.16-2.9-22.74,4.47-32.2c0.02,0.01,0.04,0.01,0.06,0.02c0.54,0.11,1.09,0.22,1.66,0.3l2.93,6.56l3.05-6.1c0.2,0,0.41,0,0.61,0 C36.73,79.64,37.04,79.64,37.35,79.63L37.35,79.63L37.35,79.63z M43.3,78.26c-2.12,0.28-4.49,0.44-6.88,0.44 c-2.64,0-5.29-0.21-7.63-0.67c1.82-2.06,4.2-3.74,7.3-4.86C39.11,74.6,41.46,76.31,43.3,78.26L43.3,78.26z M72.47,83.21 c13.46,6.38,9.74,14.66,9.74,27.84H62.94C62.94,100.21,59.44,87.96,72.47,83.21L72.47,83.21z"/>
+</g>
+</svg></body>
+</html>

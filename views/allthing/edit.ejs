@@ -1,0 +1,51 @@
+<% layout("allthing/boiler/boiler.ejs") %>
+<body>
+    <h1 class="px-5 offset-2">edit theam</h1>
+   <div class="row">
+    <div class="col-8 offset-2">
+      <form class="px-5" method="post" action='/allthing/listing/<%=data._id%>/edit'  >
+        <div> <label for="" class="form-lable mb-2"></label>   Titel  <input   class="form-control"   type="text" name="listing[title]"  value="<%=data.title  %>"> <br></div>
+        <div>  <label for="" class="form-lable mb-2"></label>   Image url<input  class="form-control"  type="url" name="listing[image]" value="<%=data.image  %>"><br></div>
+        <label for="tourist-places">Category</label>
+          <select id="tourist-places" class="form-select form-select-sm" required  name="listing[category]">
+          <option value="" disabled selected>Select one...</option>
+          <option value="Temple">Temple</option>
+          <option value="Beach">Beach</option>
+          <option value="Hill station">Hill Station</option>
+          <option value="Water Park">Water Park</option>
+          <option value="Fort">Fort</option>
+          <option value="National Park">National Park</option>
+          <option value="Historical Site">Historical Site</option>
+          <option value="Museum">Museum</option>
+          <option value="Wildlife Sanctuary">Wildlife Sanctuary</option>
+          <option value="Adventure Park">Adventure Park</option>
+          <option value="Cultural Village">Cultural Village</option>
+          <option value="Scenic Viewpoint">Scenic Viewpoint</option>
+          <option value="Amusement Park">Amusement Park</option>
+          <option value="Botanical Garden">Botanical Garden</option>
+          <option value="Lakeside Resort">Lakeside Resort</option>
+          <option value="Cave">Cave</option>
+          <option value="Stadium">Stadium</option>
+          <option value="Aquarium">Aquarium</option>
+          <option value="Spa and Wellness Center">Spa and Wellness Center</option>
+          <option value="Mountain Range">Mountain Range</option>
+          <option value="Vineyard">Vineyard</option>
+          <option value="Street Market">Street Market</option>
+          <option value="Art Gallery">Art Gallery</option>
+          <option value="Theme Park">Theme Park</option>
+          <option value="Nature Reserve">Nature Reserve</option>
+          <option value="Skyscraper Observation Deck">Skyscraper Observation Deck</option>
+          <option value="Monument">Monument</option>
+          <option value="Hot Springs">Hot Springs</option>
+          <option value="Zoological Park">Zoological Park</option>
+          
+      </select>
+        <div>  <label for="" class="form-lable mb-2"></label>   Description <textarea  class="form-control"  type="text" name="listing[description]" ><%= data.description %></textarea><br></div>
+        <div>  <label for="" class="form-lable mb-2"></label>   Ticket price <input   class="form-control" type="number" name="listing[ticketPrice]" value="<%=data.ticketPrice  %>"><br></div>
+        <div>  <label for="" class="form-lable mb-2"></label>   Location <input   class="form-control" type="text" name="listing[location]" value="<%=data.location  %>"><br></div>
+        <div>  <label for="" class="form-lable mb-2"></label>   Country <input   class="form-control" type="text" name="listing[state]"  value="<%=data.state  %>"><br></div>
+        <div>  <button type="submit" class="btn btn-danger  btn-lg pr-5 px-5 my-2">Edit</button>
+          </form>
+     </div>
+   </div>
+</body>

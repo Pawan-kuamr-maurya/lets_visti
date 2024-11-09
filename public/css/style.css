@@ -1,0 +1,108 @@
+
+.bi-compass{
+    color: red;
+   font-size: 2rem;
+}
+.navbar-nav a{
+    color: rgb(0, 0, 0) !important ;
+  
+}
+.container-fluid{
+    background-color: white;
+}
+footer{
+ 
+ margin-top: 10%;
+}
+.f-info{
+    
+    height: 7rem;
+    background-color: rgb(192, 192, 192);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.f-info-social{
+    font-size: 1.5rem;
+}
+.f-info-link a{
+    text-decoration: none;
+    color: black;
+}
+.f-info-link a:hover{
+    text-decoration:underline;
+   
+}
+.inrow{
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+/* .card{
+    height: 26rem;
+} */
+.allcard:hover{
+opacity: 0.8;
+background-color: white;
+}
+.card-text h3{
+    text-decoration: none;
+}
+.carousel-item img {
+    height: 350px; /* Set height to 200px */
+    /* object-fit: cover; Maintain aspect ratio */
+   
+     /* Make sure it fills the width */
+}
+.cur{
+    border: black 2px solid;
+    box-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+.datepost{
+    color: rgb(156, 153, 153);
+    font-size: small;
+}
+
+.scrolling-wrapper {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent line breaks */
+    padding: 15px 0; /* Padding for top & bottom */
+}
+.card-h {
+    display: inline-block; /* Align cards in a row */
+    margin-right: 15px; /* Space between cards */
+    width: 78px; /* Approx. half an inch. Usually, 1 inch = 96px */
+            /* Optional CSS to make text fit */
+  font-size: 0.6rem; /* Adjust font size to fit text */
+}
+.card-body-h{
+   padding: 1px;
+}
+.scrolling-wrapper p,h5{
+padding: 0px;
+margin: 0px;
+}
+
+
+.State{
+    height: 400px;
+}
+/* ////// form location input///// */
+#suggestions {
+    list-style: none;
+    padding: 0;
+    border: 1px solid #ccc;
+    width: 300px;
+    margin-top: 5px;
+    position: absolute; /* Position suggestions below the input */
+    z-index: 1000; /* Ensure the dropdown is above other content */
+}
+#suggestions li {
+    padding: 8px;
+    cursor: pointer;
+}
+#suggestions li:hover {
+    background-color: #f0f0f0;
+}
